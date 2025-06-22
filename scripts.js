@@ -6,13 +6,20 @@ function handleSearch() {
   const routes = {
     "game": "games.html",
     "games": "games.html",
+    "game list": "games.html",
+    "game-list": "games.html",
+    "game zone": "games.html",
     "portfolio": "portfolio.html",
     "e-portfolio": "portfolio.html",
-    "template": "templates.html",
-    "templates": "templates.html",
-    "video": "videos.html",
-    "videos": "videos.html",
-    "profile": "myprofile.html"
+    "eportfolio": "portfolio.html",
+    "projects": "portfolio.html#projects",
+    "project": "portfolio.html#projects",
+    "video": '#videos',
+    "videos": '#videos',
+    "idol": "#idol-party",
+    "idol party": "#idol-party",
+    "idol-party": "#idol-party",
+    "profile": "myprofile.html",
   };
 
   for (const keyword in routes) {

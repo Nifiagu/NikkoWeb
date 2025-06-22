@@ -413,3 +413,43 @@ body {
     box-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
   }
 }
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 10px;
+    text-align: center;
+  }
+  .buttons {
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+    padding-right: 0;
+  }
+  .profile-button {
+    position: static;
+    margin: 10px auto;
+    display: block;
+  }
+  .home-section,
+  .overlay,
+  .content-wrapper,
+  .glow-box,
+  .category-box {
+    padding: 10px !important;
+    max-width: 100% !important;
+  }
+  .category-track {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .project-row,
+  .project-row.reverse {
+    flex-direction: column !important;
+  }
+  .project-video,
+  .project-description {
+    width: 100% !important;
+  }
+}

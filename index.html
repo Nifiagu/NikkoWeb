@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Nikko Puno</title>
+  <link rel="stylesheet" href="index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="header">
+    <h1 class="site-title">Nikko Puno</h1>
+
+    <div class="search-container">
+      <input type="text" id="search-input" placeholder="Search..." />
+      <button onclick="handleSearch()">Go</button>
+    </div>
+    <div class="buttons"> 
+  <a href="portfolio.html" class="button">E-Portfolio</a>
+  <a href="" class="button">Game Zone</a>
+  <a href="" class="button">About</a>
+  <a href="" class="profile-button"><img src="images/profile.png" alt="My Profile"></a>
+    </div>
+  </header>
+
+  <!-- Home   SECTION -->
+
+<section class="home-section">
+  <div class="overlay">
+    <div class="content-wrapper">
+      
+      <!-- Glowing Welcome Box -->
+      <div class="glow-box">
+        <h1>Welcome To My Website</h1>
+        <p>I’m glad you’re here! Feel free to explore my projects, watch some videos, see what games im playing and get to know more about me and what I love doing.
+            Let me know if you want to add a specific interest like gaming, tech, or design.</p>
+      </div>
+
+      <!-- Category Container Box -->
+<div class="category-box">
+  <div class="category-heading">
+  <h3>Explore My Interests</h3>
+  <p>Swipe through the categories to see the contents.</p>
+</div>
+  <div class="category-track">
+    <div class="category-item">
+      <img src="images/b.avif" alt="E-Portfolio">
+      <a href="portfolio.html" class="category-link">E-Portfolio</a>
+    </div>
+    <div class="category-item">
+      <img src="images/Blue and Purple Cyberpunk Game Zone Desktop Background.png" alt="Game Zone">
+      <a href="game.html" class="category-link">Game Zone</a>
+    </div>
+    <div class="category-item">
+      <img src="images/istockphoto-1666926741-612x612.jpg" alt="Videos">
+      <a href="" class="category-link">Close</a>
+    </div>
+    <div class="category-item">
+      <img src="images/istockphoto-1666926741-612x612.jpg" alt="Videos">
+      <a href="" class="category-link">Close</a>
+    </div>
+</div>  
+</section>
+
+<!-- Videos -->
+ <section class="video">
+  <div class="overlay-vid"></div>
+  <div class="video-container">
+    <h1>🎬 My Video Gallery</h1>
+
+    <div class="video-cards">
+
+      <!-- Idol Party -->
+<div class="video-box idol-party">
+  <h2>Idol Party</h2>
+  <div class="video-slider">
+    <div class="video-track idol-party-track">
+      <iframe 
+    src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fnikko.mibato.puno%2Fvideos%2F1245218193917998&show_text=0&width=500"  
+    scrolling="no" 
+    frameborder="0" 
+    allowfullscreen="true"
+    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+</iframe>
+      <video controls>
+        <source src="videos/AQPxxpjkvh7RgKyCrw4eS7af9zEcISH3Fbqhv7Kqw84tc4eqByI2R6IqoP6HM6eXItVI3CbSM9itJI_2WRVdFWws.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+  <div class="slider-controls">
+    <button onclick="scrollSlider('idol-party-track', -1)">←</button>
+    <button onclick="scrollSlider('idol-party-track', 1)">→</button>
+  </div>
+</div>
+
+      <!--  Videos -->
+<div class="video-box random-videos">
+  <h2>Random Videos</h2>
+  <div class="video-slider">
+    <div class="video-track random-videos-track">
+      <video controls>
+        <source src="videos/random1.mp4" type="video/mp4">
+      </video>
+      <video controls>
+        <source src="videos/random2.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+  <div class="slider-controls">
+    <button onclick="scrollSlider('random-videos-track', -1)">←</button>
+    <button onclick="scrollSlider('random-videos-track', 1)">→</button>
+  </div>
+</div>
+</section>
+
+<!-- FOOTER SECTION -->
+<footer class="footer" id="contact">
+  <div class="footer-content">
+    <p>&copy; 2025 Nikko Puno. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="scripts.js"></script>
+</body>
+</html>

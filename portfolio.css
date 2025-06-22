@@ -1,0 +1,240 @@
+/*Home*/
+
+
+.home {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  background-color: #4e68f0;
+  color: white;
+}
+
+.photo {
+  position: relative;
+  width: 100%;
+}
+
+.b {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  color: rgb(0, 0, 0);
+}
+
+.overlay-text h1 {
+  font-size: 56px;
+}
+
+.overlay-text p {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.right-content {
+  background-color: #4e68f0;
+  width: 25%;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.right-content h2 {
+  margin-top: 10px;
+  font-size: 36px;
+}
+
+.right-content p {
+  font-size: 18 px;
+  margin: 8px 0;
+}
+
+.social-icons img {
+  width: 44px;
+  height: 44px;
+  margin: 10px 5px;
+}
+
+
+/* ABOUT SECTION */
+
+.about {
+  background-image: url('images/people-wallking-blurred-background-wallpaper_846066-14.avif'); /* Replace with your actual image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 80px 40px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+}
+
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.about-text {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 15px;
+  width: 65%;
+  animation: changeColors 5s infinite;
+  transition: background 0.3s;
+}
+
+.about-text h2 {
+  font-size: 62px;
+  margin-bottom: 15px;
+}
+
+.about-text p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.download-resume {
+  width: 30%;
+  text-align: center;
+  position: relative;
+}
+
+.download-btn {
+  display: inline-block;
+  padding: 20px;
+  border-radius: 50%;
+  animation: changeColors 5s infinite;
+  transition: transform 0.3s ease;
+  position: relative;
+}
+
+.download-btn img {
+  width: 40px;
+  height: 40px;
+}
+
+.download-btn:hover {
+  transform: scale(1.1);
+}
+
+.tooltip {
+  visibility: hidden;
+  width: 180px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  padding: 8px;
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  font-size: 14px;
+}
+
+.download-btn:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* PROJECTS SECTION */
+
+.projects {
+  background-image: url('images/business-risks-business-requires-planning-meditation-must-be-careful-deciding-to-reduce-risk-business-as-90439507.webp'); /* Replace with your actual image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 80px 40px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+}
+
+.projects-container {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+.section-title {
+  font-size: 40px;
+  margin-bottom: 40px;
+  text-align: center;
+  animation: changeColors 5s infinite;
+  border: 2px solid white;
+  border-radius: 15px;
+  padding: 10px;
+  background: transparent;
+}
+
+.project-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 60px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.project-row.reverse {
+  flex-direction: row-reverse;
+}
+
+.project-video video {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 15px;
+  border: 2px solid white;
+}
+
+.project-description {
+  flex: 1;
+  background: transparent;
+  padding: 20px;
+  border-radius: 15px;
+  animation: changeColors 8s infinite;
+  border: 2px solid white;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+.project-description h3 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.project-description p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* FOOTER SECTION */
+.footer {
+  background-color: #111;
+  padding: 30px 20px;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+}
+
+.footer-content p {
+  margin: 8px 0;
+}

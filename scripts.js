@@ -63,4 +63,3 @@ function scrollSlider(trackId, direction) {
   const offset = -sliderPositions[trackId] * 100;
   track.style.transform = `translateX(${offset}%)`;
 }
-

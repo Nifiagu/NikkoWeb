@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nikko Puno</title>
+  <link rel="stylesheet" href="profile.css">
+  <link rel="stylesheet" href="viewphone.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- HEADER SECTION -->
+  <header class="header">
+    <h1 class="site-title">Nikko Puno</h1>
+
+    <div class="search-container">
+      <input type="text" id="search-input" placeholder="Search..." />
+      <button onclick="handleSearch()">Go</button>
+    </div>
+    <div class="buttons"> 
+  <a href="index.html" class="button">Home</a>
+  <a href="#about" class="button">About</a>
+  <a href="#contact" class="button">Contact</a>
+    </div>
+  </header>
+
+<!-- PROFILE SECTION -->
+<section class="profile-banner" id="Profile">
+  <div class="profile-box">
+    <img src="images/profile_pic.png" alt="Profile Picture" class="profile-avatar">
+    <div class="profile-name">Nikko Puno</div>
+    <div class="profile-bio">
+      Passionate about technology and innovation, I enjoy building projects in automation, web development, and improving problem-solving.
+      My website showcases my E-Portfolio, Skills, Games  I played and the hands-on work that drives my curiosity and growth.
+    </div>
+    <div class="profile-stats">
+      <span>🙍‍♂️ 4th Year Student</span>
+      <span>🎓 BS in Mechatronics</span>
+      <span>📚 Looking for internship placement</span>
+      <span>📍 Cebu, Philippines</span>
+      <span>✨ 22 Years Old</span>
+      <span>🎂 Birthday: 18th August</span>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT SECTION -->
+<section class="about-section" id="about">
+  <h2 class="about-title">About Me</h2>
+  <div class="about-box">
+    <p>
+      <strong>👋 Hi, I'm Nikko M. Puno.<br></strong>
+      I'm a 4th-year Bachelor of Science in Mechatronics student at Cebu Technological University – Danao Campus.
+      I specialize in automation, IoT, and robotics, with hands-on experience building embedded systems using Arduino and ESP8266. 
+      My goal is to become a skilled Mechatronics engineer who creates smart, efficient systems that solve real-world problems.
+      <p></p>
+      <br>
+      I enjoy working on projects that combine hardware and software, especially in the fields of IoT, automation, and robotics.
+      Through my academic journey, I've gained experience in embedded systems, web interfaces, and sensor integration. I’m a fast learner, a problem solver, and I enjoy collaborating with others to bring ideas to life.
+      <p></p>
+      <br><strong>Career Goal:</strong> To grow as an Professional by contributing to innovative teams that push the boundaries of smart technologies.
+    </p>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section class="contact-section" id="contact">
+  <h2 class="contact-title">Let's Connect</h2>
+  <div class="contact-box">
+    <p class="contact-desc">
+      Feel free to reach out for any inquiries, collaborations, or opportunities. I am open to discussing how my skills and experience can contribute to your projects.
+    </p>
+    <form class="contact-form" action="https://formspree.io/f/xdoqzqzv" method="POST">
+      <label for="first-name">First name *</label>
+      <input type="text" id="first-name" name="first-name" required>
+
+      <label for="last-name">Last name *</label>
+      <input type="text" id="last-name" name="last-name" required>
+
+      <label for="email">Email *</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone</label>
+      <input type="tel" id="phone" name="phone">
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="4"></textarea>
+
+      <button type="submit" class="contact-submit">Submit</button>
+    </form>
+  </div>
+</section>
+
+  <!-- FOOTER SECTION -->
+<footer class="footer" id="contact">
+  <div class="footer-content">
+    <p>&copy; 2025 Nikko Puno. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="scripts.js"></script>
+</body>
+</html>

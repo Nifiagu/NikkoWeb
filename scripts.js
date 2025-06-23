@@ -6,8 +6,6 @@ function handleSearch() {
   const routes = {
     "game": "games.html",
     "games": "games.html",
-    "game list": "games.html",
-    "game-list": "games.html",
     "game zone": "games.html",
     "portfolio": "portfolio.html",
     "e-portfolio": "portfolio.html",
@@ -19,7 +17,9 @@ function handleSearch() {
     "idol": "#idol-party",
     "idol party": "#idol-party",
     "idol-party": "#idol-party",
-    "profile": "myprofile.html",
+    "profile": "profile.html",
+    "about": "profile.html#about",
+    "about me": "profile.html#about",
   };
 
   for (const keyword in routes) {
@@ -29,7 +29,7 @@ function handleSearch() {
     }
   }
 
-  alert("No results found. Try 'game', 'portfolio', or 'video'.");
+  alert("No results found. Try 'game', 'portfolio', 'profile' or 'video'.");
 }
 
 document.addEventListener("DOMContentLoaded", function () {

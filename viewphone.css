@@ -1,83 +1,56 @@
-@media (max-width: 700px) {
-  body {
-    font-size: 1rem;
-    padding: 0;
-    margin: 0;
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    height: auto;
+    padding: 15px 20px;
   }
-  .header, .footer {
-    padding: 10px 5px;
+
+  .site-title {
+    font-size: 30px;
     text-align: center;
   }
-  .site-title {
-    font-size: 1.3rem;
-  }
-  .search-container {
-    flex-direction: column;
-    gap: 8px;
-    width: 100%;
-  }
+
   .buttons {
     flex-direction: column;
-    gap: 8px;
-    align-items: center;
-  }
-  .home {
-    flex-direction: column;
-    align-items: center;
-    padding: 10px 0;
-  }
-  .photo {
     width: 100%;
-    text-align: center;
-  }
-  .photo img.b {
-    width: 100%;
-    height: auto;
-    max-width: 100vw;
-  }
-  .right-content {
-    width: 100%;
-    text-align: center;
-    margin-top: 16px;
-  }
-  .right-content img.profile-pic {
-    width: 90px;
-    height: 90px;
-  }
-  .about-container {
-    flex-direction: column;
-    align-items: center;
-    padding: 0 8px;
-  }
-  .about-text {
-    width: 100%;
-    font-size: 1rem;
+    gap: 10px;
     padding: 0;
   }
-  .download-resume {
-    margin: 16px 0 0 0;
+
+  .search-container {
+    flex-direction: column;
     width: 100%;
-    text-align: center;
+    margin-top: 10px;
   }
-  .projects-container {
-    padding: 0 4px;
+
+  .glow-box {
+    padding: 20px;
+    font-size: 16px;
   }
-  .project-row, .project-row.reverse {
-    flex-direction: column !important;
+
+  .glow-box h1 {
+    font-size: 28px;
+  }
+
+  .glow-box p {
+    font-size: 16px;
+  }
+
+  .category-item {
+    flex: 0 0 80%;
+  }
+
+  .video-cards {
+    flex-direction: column;
     align-items: center;
-    gap: 16px;
   }
-  .project-video video {
-    width: 100%;
-    max-width: 100vw;
-    height: auto;
+
+  .video-box {
+    width: 90%;
   }
-  .project-description {
-    width: 100%;
-    font-size: 1rem;
-    padding: 0;
-  }
-  .footer-content {
-    font-size: 0.95rem;
+
+  .profile-button {
+    position: static;
+    margin: 20px auto 0 auto;
   }
 }

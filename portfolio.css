@@ -197,12 +197,10 @@ html {
 }
 
 .about-text {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(29, 29, 29, 0.605);
   padding: 30px;
   border-radius: 15px;
-  width: 65%;
-  animation: changeColors 5s infinite;
-  transition: background 0.3s;
+  width: 65%;s
 }
 
 .about-text h2 {
@@ -226,14 +224,12 @@ html {
   display: inline-block;
   padding: 20px;
   border-radius: 50%;
-  animation: changeColors 5s infinite;
-  transition: transform 0.3s ease;
   position: relative;
 }
 
 .download-btn img {
-  width: 40px;
-  height: 40px;
+  width: 100px;
+  height: 100px;
 }
 
 .download-btn:hover {
@@ -270,7 +266,7 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   padding: 80px 40px;
-  color: white;
+  color: rgb(255, 255, 255);
   font-family: 'Poppins', sans-serif;
   position: relative;
 }
@@ -287,11 +283,10 @@ html {
   font-size: 40px;
   margin-bottom: 40px;
   text-align: center;
-  animation: changeColors 5s infinite;
   border: 2px solid white;
   border-radius: 15px;
   padding: 10px;
-  background: transparent;
+  background: rgba(0, 0, 0, 0.475);
 }
 
 .project-row {
@@ -316,7 +311,7 @@ html {
 
 .project-description {
   flex: 1;
-  background: transparent;
+  background: rgba(0, 0, 0, 0.537);
   padding: 20px;
   border-radius: 15px;
   animation: changeColors 8s infinite;

@@ -1,8 +1,6 @@
 function handleSearch() {
   const input = document.getElementById("search-input").value.toLowerCase();
 
-/* Search Bar */
-
   const routes = {
     "game": "games.html",
     "games": "games.html",

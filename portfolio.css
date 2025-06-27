@@ -279,7 +279,7 @@ body {
   }
 }
 
-/* Add to your CSS file */
+/* Section Category */
 
 .ecategory-section {
   background: #232329;
@@ -397,6 +397,7 @@ body {
 }
 
 /* Portfolio Description */
+
 .portfolio-description-box {
   display: flex;
   justify-content: center;

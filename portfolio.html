@@ -1,121 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="portfolio.css">
-    <link rel="stylesheet" href="viewphone.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My E-Portfolio</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nikko Puno</title>
+  <link rel="stylesheet" href="portfolio.css">
+  <link rel="stylesheet" href="viewphone.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     
-<header class="header" id="home">
+<header class="header">
     <h1 class="site-title">E-Portfolio</h1>
-    
-     <div class="search-container">
+
+    <div class="search-container">
       <input type="text" id="search-input" placeholder="Search..." />
       <button onclick="handleSearch()">Go</button>
     </div>
-    <div class="buttons">     
-      <a href="index.html" class="button">Home</a>
-      <a href="#about" class="button">About</a>
-      <a href="#projects" class="button">Projects</a>
-      <a href="#projects" class="button">ESP8266</a>
-      <a href="profile.html" class="profile-button"><img src="images/profile_pic.png" alt="My Profile"></a>
+
+    <div class="buttons"> 
+  <a href="index.html" class="button">Home</a>
+  <a href="#E-Category" class="button">Sections</a>
+  <a href="#portfolioDescriptionBox" class="button">About</a>
+  <a href="profile.html#contact" class="button">Contact</a>
+  <a href="profile.html" class="profile-button"><img src="images/profile_pic.png" alt="My Profile"></a>
     </div>
   </header>
 
- <!-- Home   SECTION -->   
 
-  <section class="home">
+  <!-- Hero SECTION -->
 
-    <div class="photo">
-      <img src="images/b.avif" alt="Main background" class="b" />
-      <div class="overlay-text">
-        <h1>Hello, I'm <strong>Nikko M. Puno</strong></h1>
-        <p>BS in Mechatronics Student from CTU-Danao</p>
-      </div>
+<section class="hero-section">
+  <div class="hero-left">
+    <div class="hero-bg-overlay">
+      <img src="images/b.avif" alt="Portfolio Background" class="hero-bg-img">
     </div>
-
-    <div class="right-content">
-      <img src="images/IMG_27.JPG" alt="Profile Picture" class="profile-pic" />
-      <h2>Nikko M. Puno</h2>
-      <p>BS in Mechatronics</p>
-      <p>Cebu Technological University – Danao</p>
-
-      <div class="social-icons">
-      <a href="https://www.facebook.com/nikko.mibato.puno" target="_blank">
-       <img src="images/image-removebg-preview (1).png" alt="Facebook">
-      </a>
-      </div>
+    <div class="hero-texts">
+      <h1 class="hero-intro">Welcome To My E-Portfolio</h1>
     </div>
-
-  </section>
-
-<!-- ABOUT SECTION -->
-<section class="about" id="about">
-  <div class="about-container">
-    <div class="about-text">
-  <h2>About Me</h2>
-      <p>
-        I’am a passionate and motivated student of Bachelor of Science in Mechatronics at Cebu Technological University – Danao Campus. I have basic skills in web design and development using HTML and CSS, and I’m familiar with programming microcontrollers using the Arduino IDE and Visual Studio Code. During our thesis project, my classmates and I worked together on a miniaturized packaging system, where we all contributed to the overall design and agreed on the core idea. While I only have basic knowledge in PLC programming, I’m willing to start again from the fundamentals to improve in that area.
-      </p>
-
-      <p>
-         For my second project using the ESP8266, I personally worked on the entire web code for the interface, while my groupmates helped by sharing ideas for the design and layout. These experiences taught me the value of collaboration, hands-on learning, and pushing my skills forward. My goal is to continue growing in my course and become more confident and capable in areas like automation, sensor systems, web-based controls, and embedded systems.
-      </p>
+  </div>
+  <div class="hero-right">
+    <img src="images/IMG_27.JPG" alt="Profile Photo" class="hero-profile-photo">
+    <div class="hero-profile-info">
+      <div class="hero-profile-name">Nikko M. Puno.</div>
+      <div class="hero-profile-course">BS in Mechatronics<br>Cebu, Philippines</div>
+      <div class="hero-profile-contact">
+        nikkopuno0218@gmail.com<br>
+        (63+) 0994-942-5943
       </div>
-    <div class="download-resume">
-      <a href="files/Nikko_M_Puno_Resume.pdf" class="download-btn" download>
-        <img src="images/5442053.png" alt="Download Icon" />
-        <span class="tooltip">Click to download my resume</span>
-      </a>
+      <a href="files/Nikko_M_Puno_Resume.pdf" class="hero-cv-btn" download>Download Resume</a>
     </div>
   </div>
 </section>
 
-
-<!-- PROJECTS SECTION -->
-<section class="projects" id="projects">
-  <div class="projects-container">
-    <h2 class="section-title">My Projects</h2>
-
-    <div class="project-row">
-      <div class="project-video">
-        <video src="videos/Screen Recording 2025-05-31 102616.mp4" controls></video>
-      </div>
-      <div class="project-description">
-        <h3>Research/Thesis Project</h3>
-        <p>
-          The Miniaturized Factory Packaging Model enhances student learning in industrial automation by offering a compact, hands-on simulation of real packaging systems. Using PLCs, it allows students to design, program, and troubleshoot automation tasks, bridging the gap between theory and practical application in a more engaging, industry-relevant way.
-        </p>
-      </div>
+<!-- E-Category Section -->
+<section class="ecategory-section" id="E-Category">
+  <h2 class="ecategory-title">Sections</h2>
+  <div class="ecategory-slider">
+    <button class="ecategory-arrow left" onclick="slideEcategory(-1)">&#8592;</button>
+    <div class="ecategory-track" id="ecategoryTrack">
+      
+      <!-- Category cards will be injected here by JS -->
     </div>
-
-    <div class="project-row reverse">
-      <div class="project-description">
-        <h3>ESP8266 Web Server</h3>
-        <p>
-          This project uses an ESP8266 microcontroller to create a web server that shows real-time distance from an ultrasonic sensor. The data is displayed on a custom HTML page with a glowing design, animated background, and colorful buttons. It blends IoT, sensors, and web development into an interactive Mechatronics application.
-        </p>
-      </div>
-      <div class="project-video">
-        <video src="videos/AQMPffZ9x5DYjonQWnxAB7rCgPIY4ROackZg1BNHdjqKo33rL9B3JLPjmv1SLHU1bNZunHNEj-Frx1AAxz-MUwc1.mp4" controls></video>
-      </div>
-    </div>
+    <button class="ecategory-arrow right" onclick="slideEcategory(1)">&#8594;</button>
   </div>
+
+  <!-- Category Description -->
+  <div class="portfolio-description-box" id="portfolioDescriptionBox">
+  <p class="portfolio-description">
+    Welcome to my E-Portfolio! This website showcases my journey as a Mechatronics student, featuring my school projects, internship (OJT) experiences, and other works. Here, you’ll find detailed documentation of my technical skills, hands-on projects, and the growth I’ve achieved throughout my academic and professional development. Explore each section to learn more about my passion for innovation, and continuous learning.
+  </p>
+  </div> 
 </section>
 
-<!-- FOOTER SECTION -->
-<footer class="footer">
-  <div class="footer-content">
-    <p>&copy; 2025 Nikko Puno. All rights reserved.</p>
-  </div>
-</footer>
-
-<script src="scripts.js"></script>
+<script src="portfolio.js"></script>
 </body>
 </html>

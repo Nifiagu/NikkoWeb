@@ -465,6 +465,10 @@ body {
 }
 
 @media (max-width: 768px) {
+  .glow-box {
+    margin-top: 300px;
+  }
+  
   .glow-box h1 {
     font-size: 30px;
   }

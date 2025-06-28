@@ -420,3 +420,61 @@ body {
   box-shadow: 0 4px 24px rgba(31, 38, 135, 0.10);
   font-family: 'Poppins', sans-serif;
 }
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    height: auto;
+    padding: 15px 20px;
+  }
+
+  .site-title {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .buttons {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    padding: 0;
+  }
+
+  .search-container {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .glow-box {
+    padding: 20px;
+    font-size: 16px;
+  }
+
+  .glow-box h1 {
+    font-size: 28px;
+  }
+
+  .glow-box p {
+    font-size: 16px;
+  }
+
+  .category-item {
+    flex: 0 0 80%;
+  }
+
+  .video-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .video-box {
+    width: 90%;
+  }
+
+  .profile-button {
+    position: static;
+    margin: 20px auto 0 auto;
+  }
+}

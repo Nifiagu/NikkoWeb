@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="games.css">
-    <link rel="stylesheet" href="viewphone.css">
+    <link rel="stylesheet" href="sidebar.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <title>Nikko's Games</title>
 </head>
@@ -24,6 +24,22 @@
   <a href="" class="button">Idol Party</a>
   <a href="" class="profile-button"><img src="images/profile_pic.png" alt="My Profile"></a>
     </div>
+
+    <!-- Side Bar Button -->
+<button class="sidebar-toggle" onclick="openSidebar()">☰</button>
+
+<!-- Sidebar Panel -->
+<aside id="Sidebar" class="sidebar">
+  <button class="close-sidebar" onclick="closeSidebar()">×</button>
+  <nav class="sidebar-nav">
+    <a href="profile.html">👤 Profile</a>
+    <a href="portfolio.html">👨‍💻 E-Portfolio</a>
+    <a href="games.html">🎮 Game Zone</a>
+    <a href="profile.html#about">🪪 About</a>
+    <a href="profile.html#contact">📧 Contact</a>
+  </nav>
+</aside>
+
 </header>
 
 
@@ -56,6 +72,8 @@
       <img src="images/HD-wallpaper-video-game-minecraft.jpg" alt="Minecraft">
       <a href="#minecraft" class="category-link">Minecraft</a>
     </div>
+
+    
 </div>  
 </section>
 

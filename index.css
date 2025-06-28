@@ -15,16 +15,22 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  padding-top: 100px;
 }
 
 .header {
-  position: relative; 
+  position: fixed;   
+  top: 0;            
+  left: 0;
+  right: 0;
   background-color: black;
   padding: 20px 40px;
   height: 100px;
   display: flex;
   align-items: center;
+  z-index: 1000;     
 }
+
 
 
 .site-title {
@@ -113,6 +119,7 @@ body {
 .animated-button:hover {
   transform: scale(1.05);
 }
+
 
 /* Home Section Base */
 .home-section {
@@ -414,3 +421,115 @@ body {
   }
 }
 
+/* View Mobile */
+
+@media (max-width: 1024px) {
+  .header {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 20px;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .buttons {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .profile-button {
+    position: static;
+    margin-top: 10px;
+  }
+
+  .search-container {
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .category-item {
+    flex: 0 0 calc(50% - 10px); 
+  }
+
+  .video-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .video-box {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .glow-box h1 {
+    font-size: 30px;
+  }
+
+  .glow-box p {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .category-item {
+    flex: 0 0 100%; 
+  }
+
+  .site-title {
+    font-size: 36px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .category-heading h3 {
+    font-size: 24px;
+  }
+
+  .video-container h1 {
+    font-size: 26px;
+  }
+
+  .buttons {
+    gap: 10px;
+  }
+
+  .button {
+    padding: 8px 14px;
+    font-size: 14px;
+  }
+
+  .profile-button {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .glow-box {
+    padding: 20px;
+  }
+
+  .search-container input {
+    width: 60%;
+  }
+
+  .search-container button {
+    padding: 6px 10px;
+    font-size: 14px;
+  }
+
+  .category-box {
+    padding: 10px;
+  }
+
+  .category-heading p {
+    font-size: 13px;
+  }
+
+  .footer {
+    font-size: 12px;
+  }
+}

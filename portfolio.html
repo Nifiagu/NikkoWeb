@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nikko Puno</title>
-  <link rel="stylesheet" href="viewphone.css">
+  <link rel="stylesheet" href="sidebar.css">
   <link rel="stylesheet" href="portfolio.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
@@ -23,9 +23,25 @@
   <a href="index.html" class="button">Home</a>
   <a href="#E-Category" class="button">Sections</a>
   <a href="#portfolioDescriptionBox" class="button">About</a>
-  <a href="profile.html#contact" class="button">Contact</a>
+  <a href="portfolio-mechatronic.html" class="button">Contact</a>
   <a href="profile.html" class="profile-button"><img src="images/profile_pic.png" alt="My Profile"></a>
     </div>
+
+<!-- Side Bar Button -->
+<button class="sidebar-toggle" onclick="openSidebar()">☰</button>
+
+<!-- Sidebar Panel -->
+<aside id="Sidebar" class="sidebar">
+  <button class="close-sidebar" onclick="closeSidebar()">×</button>
+  <nav class="sidebar-nav">
+    <a href="profile.html">👤 Profile</a>
+    <a href="portfolio.html">👨‍💻 E-Portfolio</a>
+    <a href="games.html">🎮 Game Zone</a>
+    <a href="profile.html#about">🪪 About</a>
+    <a href="profile.html#contact">📧 Contact</a>
+  </nav>
+</aside>
+    
   </header>
 
 
@@ -58,22 +74,20 @@
 <section class="ecategory-section" id="E-Category">
   <h2 class="ecategory-title">Sections</h2>
   <div class="ecategory-slider">
-    <button class="ecategory-arrow left" onclick="slideEcategory(-1)">&#8592;</button>
     <div class="ecategory-track" id="ecategoryTrack">
-      
-      <!-- Category cards will be injected here by JS -->
+      <!-- Cards will be injected here -->
     </div>
-    <button class="ecategory-arrow right" onclick="slideEcategory(1)">&#8594;</button>
   </div>
 
   <!-- Category Description -->
   <div class="portfolio-description-box" id="portfolioDescriptionBox">
-  <p class="portfolio-description">
-    Welcome to my E-Portfolio! This website showcases my journey as a Mechatronics student, featuring my school projects, internship (OJT) experiences, and other works. Here, you’ll find detailed documentation of my technical skills, hands-on projects, and the growth I’ve achieved throughout my academic and professional development. Explore each section to learn more about my passion for innovation, and continuous learning.
-  </p>
+    <p class="portfolio-description">
+      Welcome to my E-Portfolio! This website showcases my journey as a Mechatronics student, featuring my school projects, internship (OJT) experiences, and other works. Here, you’ll find detailed documentation of my technical skills, hands-on projects, and the growth I’ve achieved throughout my academic and professional development. Explore each section to learn more about my passion for innovation, and continuous learning.
+    </p>
   </div> 
 </section>
 
 <script src="portfolio.js"></script>
+<script src="scripts.js"></script>
 </body>
 </html>

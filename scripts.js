@@ -39,6 +39,16 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
+/* Search Bar */
+function toggleSidebar() {
+    const sidebar = document.getElementById("sidebar");
+    if (sidebar.style.left === "0px") {
+      sidebar.style.left = "-250px";
+    } else {
+      sidebar.style.left = "0px";
+    }
+  }
+
 /* Video Script */
 
 const sliderPositions = {
@@ -61,3 +71,12 @@ function scrollSlider(trackId, direction) {
   const offset = -sliderPositions[trackId] * 100;
   track.style.transform = `translateX(${offset}%)`;
 }
+
+/* Sidebar Script */
+  function openSidebar() {
+    document.getElementById("Sidebar").classList.add("active");
+  }
+
+  function closeSidebar() {
+    document.getElementById("Sidebar").classList.remove("active");
+  }

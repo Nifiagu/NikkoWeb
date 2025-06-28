@@ -1,0 +1,61 @@
+/* Sidebar Toggle Button in Header */
+.sidebar-toggle {
+  margin-left: auto;
+  background-color: black;
+  border: none;
+  font-size: 28px;
+  color: lightgreen;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+/* Sidebar Panel */
+.sidebar {
+  position: fixed;
+  top: 100px; /* below fixed header */
+  left: -260px;
+  width: 250px;
+  height: calc(100% - 100px);
+  background-color: #1c1c1c;
+  box-shadow: 3px 0 8px rgba(0,0,0,0.5);
+  transition: left 0.4s ease;
+  z-index: 1050;
+  padding-top: 20px;
+}
+
+/* Show sidebar when active */
+.sidebar.active {
+  left: 0;
+}
+
+/* Close Button inside Sidebar */
+.close-sidebar {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: none;
+  color: lightgreen;
+  border: none;
+  font-size: 46px;
+  cursor: pointer;
+}
+
+/* Sidebar navigation links */
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  padding: 30px 20px;
+}
+
+.sidebar-nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+  transition: 0.3s;
+}
+
+.sidebar-nav a:hover {
+  color: lightgreen;
+  padding-left: 10px;
+}

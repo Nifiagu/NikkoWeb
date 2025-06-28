@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nikko Puno</title>
   <link rel="stylesheet" href="index.css">
-  <link rel="stylesheet" href="viewphone.css">
+  <link rel="stylesheet" href="sidebar.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -26,6 +26,21 @@
   <a href="profile.html#contact" class="button">Contact</a>
   <a href="profile.html" class="profile-button"><img src="images/profile_pic.png" alt="My Profile"></a>
     </div>
+
+    <!-- Side Bar Button -->
+<button class="sidebar-toggle" onclick="openSidebar()">☰</button>
+
+<!-- Sidebar Panel -->
+<aside id="Sidebar" class="sidebar">
+  <button class="close-sidebar" onclick="closeSidebar()">×</button>
+  <nav class="sidebar-nav">
+    <a href="profile.html">👤 Profile</a>
+    <a href="portfolio.html">👨‍💻 E-Portfolio</a>
+    <a href="games.html">🎮 Game Zone</a>
+    <a href="profile.html#about">🪪 About</a>
+    <a href="profile.html#contact">📧 Contact</a>
+  </nav>
+</aside>
   </header>
 
   <!-- Home   SECTION -->

@@ -59,3 +59,77 @@
   color: lightgreen;
   padding-left: 10px;
 }
+
+
+/* View Mobile */
+
+@media (max-width: 768px) {
+
+  /* Make the sidebar full height and slightly wider for touch */
+  .sidebar {
+    width: 80%;
+    max-width: 280px;
+    top: 100px;
+    left: -100%;
+    height: calc(100% - 100px);
+    padding-top: 30px;
+  }
+
+  .sidebar.active {
+    left: 0;
+  }
+
+  .sidebar-toggle {
+    font-size: 26px;
+    padding: 8px 14px;
+    background-color: transparent;
+    color: #90ee90;
+    border: 2px solid #90ee90;
+    border-radius: 6px;
+    margin-left: auto;
+    z-index: 1101;
+  }
+
+  .close-sidebar {
+    font-size: 38px;
+    top: 10px;
+    right: 20px;
+  }
+
+  .sidebar-nav {
+    gap: 40px;
+    padding: 40px 24px;
+  }
+
+  .sidebar-nav a {
+    font-size: 22px;
+  }
+
+  /* Optional: Dim background behind sidebar */
+  .sidebar-backdrop {
+    content: "";
+    position: fixed;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 100px);
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1040;
+    display: none;
+  }
+
+  .sidebar.active + .sidebar-backdrop {
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar-toggle {
+    font-size: 24px;
+    padding: 6px 12px;
+  }
+
+  .sidebar-nav a {
+    font-size: 20px;
+  }
+}

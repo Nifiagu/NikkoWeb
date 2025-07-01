@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nikko Puno</title>
+  <link rel="stylesheet" href="sidebar.css">
+  <link rel="stylesheet" href="mechatronics.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+<header class="header">
+    <h1 class="site-title">E-Portfolio</h1>
+
+    <div class="search-container">
+      <input type="text" id="search-input" placeholder="Search..." />
+      <button onclick="handleSearch()">Go</button>
+    </div>
+
+    <div class="buttons"> 
+  <a href="portfolio.html" class="button">Back</a>
+  <a href="#E-Category" class="button">Sections</a>
+  <a href="#intern" class="button">internship / OJT</a>
+  <a href="profile.html" class="profile-button"><img src="images/profile_pic.png" alt="My Profile"></a>
+    </div>
+
+<!-- Side Bar Button -->
+<button class="sidebar-toggle" onclick="openSidebar()">☰</button>
+
+<!-- Sidebar Panel -->
+<aside id="Sidebar" class="sidebar">
+  <button class="close-sidebar" onclick="closeSidebar()">×</button>
+  <nav class="sidebar-nav">
+    <a href="profile.html">👤 Profile</a>
+    <a href="portfolio.html">👨‍💻 E-Portfolio</a>
+    <a href="games.html">🎮 Game Zone</a>
+    <a href="profile.html#about">🪪 About</a>
+    <a href="profile.html#contact">📧 Contact</a>
+  </nav>
+</aside>
+    </header>
+
+    
+<section id="home" class="home-section">
+  <div class="home-content">
+    <div class="image-wrapper">
+      <img src="images/360_F_990923714_sF5osTisqmRxbFQCCR5uvHYPyWsyU5g1.jpg" alt="Mechatronics Neon Banner" class="home-image" />
+      <h1 class="home-title">Bachelor of Science in Mechatronics</h1>
+    </div>
+    <p class="home-description">
+      A dynamic and interdisciplinary program offered at Cebu Technological University – Danao Campus (Sabang), integrating mechanical, electrical, electronic, and computer engineering to design and create smart automation systems for modern industries.
+    </p>
+  </div>
+</section>
+
+<!-- Album Section -->
+
+<section id="albums" class="albums-section">
+  <h2 class="albums-title">Albums</h2>
+  <div class="album-slider-container">
+    <button class="slider-btn prev-btn">&#10094;</button>
+    <div class="album-track">
+      <!-- Album Card Example (Repeat for each image) -->
+      <div class="album-card">
+        <img src="Mechatronics Section A-Day/494329649_1004684551732334_5292010722488928624_n.jpg" alt="Photo 1">
+        <button class="view-btn" onclick="openModal('Mechatronics Section A-Day/494329649_1004684551732334_5292010722488928624_n.jpg')">View</button>
+      </div>
+      <div class="album-card">
+        <img src="Mechatronics Section A-Day/494358711_722602723492166_715061291555062611_n.jpg" alt="Photo 2">
+        <button class="view-btn" onclick="openModal('Mechatronics Section A-Day/494358711_722602723492166_715061291555062611_n.jpg')">View</button>
+      </div>
+      <div class="album-card">
+        <img src="Mechatronics Section A-Day/494818921_711933578182090_8648940332575698646_n.jpg" alt="Photo 3">
+        <button class="view-btn" onclick="openModal('Mechatronics Section A-Day/494818921_711933578182090_8648940332575698646_n.jpg')">View</button>
+      </div>
+      <div class="album-card">
+        <img src="Mechatronics Section A-Day/494819275_1393058971729929_6422221582391500933_n.jpg" alt="Photo 4">
+        <button class="view-btn" onclick="openModal('Mechatronics Section A-Day/494819275_1393058971729929_6422221582391500933_n.jpg')">View</button>
+      </div>
+      <div class="album-card">
+        <img src="Mechatronics Section A-Day/494825309_678740841666817_8772538190203296834_n.jpg" alt="Photo 5">
+        <button class="view-btn" onclick="openModal('Mechatronics Section A-Day/494825309_678740841666817_8772538190203296834_n.jpg')">View</button>
+      </div>
+      <div class="album-card">
+        <img src="Mechatronics Section A-Day/500722756_29699042889741011_3081313599329477831_n.jpg" alt="Photo 5">
+        <button class="view-btn" onclick="openModal('Mechatronics Section A-Day/500722756_29699042889741011_3081313599329477831_n.jpg')">View</button>
+      </div>
+      <!-- Add more .album-card items here -->
+    </div>
+    <button class="slider-btn next-btn">&#10095;</button>
+  </div>
+</section>
+
+<!-- Modal for full image view -->
+<div id="modal" class="image-modal" onclick="closeModal()">
+  <span class="close-modal">&times;</span>
+  <img class="modal-content" id="modal-img">
+</div>
+
+<!-- Projects -->
+
+<section id="projects" class="projects-section">
+  <h2 class="projects-title">Projects</h2>
+
+  <div class="project-box">
+    <video class="project-video" controls>
+      <source src="videos/Screen Recording 2025-05-31 102616.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <div class="project-info">
+      <button class="project-name" onclick="toggleDescription(1)">Miniaturized Factory Packaging Model</button>
+      <div class="project-description" id="desc1">
+        This model simulates a small-scale automated packaging system used in industrial settings. It includes a conveyor belt and sensors that detect and move items through packaging stages. The setup demonstrates mechatronics in action by combining mechanical design, electronics, and automation for efficient operation.
+      </div>
+    </div>
+  </div>
+
+  <div class="project-box">
+    <video class="project-video" controls>
+      <source src="videos/AQMPffZ9x5DYjonQWnxAB7rCgPIY4ROackZg1BNHdjqKo33rL9B3JLPjmv1SLHU1bNZunHNEj-Frx1AAxz-MUwc1.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <div class="project-info">
+      <button class="project-name" onclick="toggleDescription(2)">ESP8266</button>
+      <div class="project-description" id="desc2">
+        This system uses an ESP8266 and ultrasonic sensor to measure object distance in real time. The data is shown on a custom web page with animated backgrounds and glowing elements. Users can access it wirelessly on any device within the same Wi-Fi network.
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<script src="mecha.js"></script>
+<script src="scripts.js"></script>
+</body>
+</html>

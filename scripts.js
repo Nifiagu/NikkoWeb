@@ -49,29 +49,6 @@ function toggleSidebar() {
     }
   }
 
-/* Video Script */
-
-const sliderPositions = {
-  'idol-party-track': 0,
-  'random-videos-track': 0,
-};
-
-function scrollSlider(trackId, direction) {
-  const track = document.querySelector(`.${trackId}`);
-  const totalSlides = track.children.length;
-
-  sliderPositions[trackId] += direction;
-
-  if (sliderPositions[trackId] < 0) {
-    sliderPositions[trackId] = totalSlides - 1;
-  } else if (sliderPositions[trackId] >= totalSlides) {
-    sliderPositions[trackId] = 0;
-  }
-
-  const offset = -sliderPositions[trackId] * 100;
-  track.style.transform = `translateX(${offset}%)`;
-}
-
 /* Sidebar Script */
   function openSidebar() {
     document.getElementById("Sidebar").classList.add("active");
@@ -79,4 +56,10 @@ function scrollSlider(trackId, direction) {
 
   function closeSidebar() {
     document.getElementById("Sidebar").classList.remove("active");
+  }
+
+/* Projects */
+  function toggleDescription(id) {
+    const desc = document.getElementById(`desc${id}`);
+    desc.classList.toggle('show');
   }

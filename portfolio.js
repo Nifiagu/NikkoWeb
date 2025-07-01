@@ -2,7 +2,7 @@ const ecategoryData = [
   {
     title: "BS in Mechatronics",
     img: "images/mechatronics-animated-word-cloudanimation-kinetic-footage-247562689_iconl.webp",
-    link: "#mechatronics"
+    link: "portfolio-mechatronics.html"
   },
   {
     title: "Internship / OJT",

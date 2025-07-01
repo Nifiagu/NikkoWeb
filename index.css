@@ -446,9 +446,56 @@ body {
     margin-top: 10px;
   }
 
+<<<<<<< HEAD
   .search-container input {
     flex: 1;
     min-width: 120px;
+=======
+  .category-item {
+    flex: 0 0 calc(50% - 10px); 
+  }
+
+  .video-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .video-box {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .glow-box {
+    margin-top: 300px;
+  }
+  
+  .glow-box h1 {
+    font-size: 30px;
+  }
+
+  .glow-box p {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .category-item {
+    flex: 0 0 100%; 
+  }
+
+  .site-title {
+    font-size: 36px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .category-heading h3 {
+    font-size: 24px;
+  }
+
+  .video-container h1 {
+    font-size: 26px;
+>>>>>>> beec087cd127a48f190ec509a19d9a1e05707acf
   }
 
   .buttons {
